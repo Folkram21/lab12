@@ -5,7 +5,7 @@ int main() {
 
 	setlocale(LC_CTYPE, "RUS");
 
-	char* pа, x = 5; // меняем double на char
+	_Bool* pа, x = 5; // меняем char на long double/short unsigned int/_Bool
 
 	pа = &x;
 
@@ -44,3 +44,7 @@ int main() {
 /* Заменив тип переменной и указателей с double на char мы
 замечаем, что при сдвиге указателя адрес меняется на 1 байт
 а не 8*/
+
+/* Заменив тип переменной и указателей с char на 
+long double/short unsigned int/_Bool мы замечаем, что 
+при сдвиге указателя адрес меняется на 8/2/1 байт */
