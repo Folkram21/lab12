@@ -11,7 +11,7 @@ int main() {
 
 	for (int i = 0; i < size; i++) {
 		printf("\nmemory[%p] = %f", ptr_a, *ptr_a);
-		ptr_a++;
+		ptr_a = ptr_a + 2;
 	}
 
 	printf("\nФrray variable memory - %p", array);
