@@ -9,12 +9,14 @@ int main() {
 	ptr_a = &array;
 	size = sizeof(array) / sizeof(*ptr_a);
 
+	ptr_a = ptr_a + (size - 1);
+
 	for (int i = 0; i < size; i++) {
 		printf("\nmemory[%p] = %f", ptr_a, *ptr_a);
-		ptr_a = ptr_a + 2;
+		ptr_a--;
 	}
 
-	printf("\nФrray variable memory - %p", array);
+	printf("\n\nArray variable memory - %p", array);
 	printf("\nFirst element memory - %p", &array[0]);
 	printf("\nArray memory - %p", &array);
 
