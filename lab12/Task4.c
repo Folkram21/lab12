@@ -14,5 +14,9 @@ int main() {
 		ptr_a++;
 	}
 
+	printf("\nФrray variable memory - %p", array);
+	printf("\nFirst element memory - %p", &array[0]);
+	printf("\nArray memory - %p", &array);
+
 	return 0;
 }
